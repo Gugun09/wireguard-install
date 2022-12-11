@@ -215,7 +215,7 @@ net.ipv6.conf.all.forwarding = 1" >/etc/sysctl.d/wg.conf
 	systemctl start "wg-quick@${SERVER_WG_NIC}"
 	systemctl enable "wg-quick@${SERVER_WG_NIC}"
 
-	newClient
+# 	newClient
 	echo "If you want to add more clients, you simply need to run this script another time!"
 
 	# Check if WireGuard is running
